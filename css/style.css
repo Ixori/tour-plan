@@ -471,7 +471,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -481,6 +480,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .search__input {
+    width: 340px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -488,7 +490,7 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar__user, .navbar-menu {
+  .navbar-menu, .navbar__search, .navbar__user {
     display: none;
   }
   .menu-button {
@@ -496,6 +498,7 @@ template {
     align-items: center;
     width: 16px;
     height: 11px;
+    padding: 0;
     justify-content: space-between;
     flex-direction: column;
     border: none;
