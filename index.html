@@ -129,26 +129,26 @@
           </div>
         </div>
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel__slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="img/slide1.jpg" alt="slide" />
+                  <img class="swiper-slide__image" src="img/slide1.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide2.jpg" alt="slide" />
+                  <img class="swiper-slide__image" src="img/slide2.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide3.jpg" alt="slide" />
+                  <img class="swiper-slide__image" src="img/slide3.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide4.jpg" alt="slide" />
+                  <img class="swiper-slide__image" src="img/slide4.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide5.jpg" alt="slide" />
+                  <img class="swiper-slide__image" src="img/slide5.jpg" alt="slide" />
                 </div>
               </div>
               <!-- If we need pagination -->
@@ -156,8 +156,6 @@
               <!-- If we need navigation buttons -->
               <button class="slider-button slider-button--prev"></button>
               <button class="slider-button slider-button--next"></button>
-
-              
             </div>
           </div>
           <div class="hotel-right">
@@ -171,12 +169,20 @@
                 <!-- /.booking__price -->
                 <div class="booking__room">
                   <div class="booking__text">
-                    <img src="img/user.svg" alt="Icon: guest" class="booking__icon" />
+                    <img
+                      src="img/user.svg"
+                      alt="Icon: guest"
+                      class="booking__icon"
+                    />
                     <span class="booking__description">2 x Guests</span>
                   </div>
                   <!-- /.booking__text -->
                   <div class="booking__text">
-                    <img src="img/home.svg" alt="Icon: room" class="booking__icon" />
+                    <img
+                      src="img/home.svg"
+                      alt="Icon: room"
+                      class="booking__icon"
+                    />
                     <span class="booking__description">1 x Room</span>
                   </div>
                 </div>
@@ -184,17 +190,26 @@
               </div>
               <!-- /.booking__info -->
               <div class="booking__call-center">
-                  <span class="booking__heading">Quick Booking</span>
-                  <a class="booking__number" href="tel:12100">
-                    <img src="img/phonecall.svg" alt="Icon: phone">
-                    <span class="booking__num">12100</span>
-                  </a>
-                </div>
+                <span class="booking__heading">Quick Booking</span>
+                <a class="booking__number" href="tel:12100">
+                  <img src="img/phonecall.svg" alt="Icon: phone" />
+                  <span class="booking__num">12100</span>
+                </a>
+              </div>
               <!-- /.booking__call-center -->
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37344312.825382374!2d-4.735003399999995!3d40.617264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed2deceae4721%3A0x408f7a1ace95c13!2sDoubleTree%20by%20Hilton%20Hotel%20%26%20Conference%20Centre%20Warsaw!5e1!3m2!1sru!2slv!4v1616070682027!5m2!1sru!2slv" width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37344312.825382374!2d-4.735003399999995!3d40.617264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed2deceae4721%3A0x408f7a1ace95c13!2sDoubleTree%20by%20Hilton%20Hotel%20%26%20Conference%20Centre%20Warsaw!5e1!3m2!1sru!2slv!4v1616070682027!5m2!1sru!2slv"
+                width="100%"
+                height="213"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
           <!-- /.hotel-right -->
         </div>
