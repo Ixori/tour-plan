@@ -799,6 +799,7 @@ template {
   width: 355px;
   height: 55px;
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .subscribe__input {
@@ -823,7 +824,11 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffff;
-  overflow: hidden;
+  cursor: pointer;
+}
+
+.subscribe__button:hover {
+  background-color: #df133a;
 }
 
 .reviews {
@@ -1136,6 +1141,13 @@ template {
   }
   .newsletter__title {
     margin-bottom: 20px;
+  }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
   }
 }
 /*# sourceMappingURL=style.css.map */
