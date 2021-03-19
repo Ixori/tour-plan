@@ -754,6 +754,7 @@ template {
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -798,7 +799,6 @@ template {
   width: 355px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -823,6 +823,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffff;
+  overflow: hidden;
 }
 
 .reviews {
