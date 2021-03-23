@@ -748,6 +748,49 @@ template {
   overflow: hidden;
 }
 
+.packages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.packages-wrapper {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 500px;
+}
+
+.packages__item {
+  border-radius: 8px;
+}
+
+.packages__item:nth-last-child(3) {
+  position: relative;
+}
+
+.packages__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 12px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  color: #ffff;
+}
+
+.packages__img {
+  overflow: hidden;
+}
+
+.packages__img:nth-last-child(2) {
+  height: 500px;
+  width: 350px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
