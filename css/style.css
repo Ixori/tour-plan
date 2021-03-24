@@ -23,6 +23,11 @@ img {
   border: none;
   padding: 0 23px;
   height: 50px;
+  outline: none;
+}
+
+.input:active {
+  outline: none;
 }
 
 .message {
@@ -44,6 +49,12 @@ img {
   font-size: 12px;
   line-height: 15px;
   border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:active {
+  outline: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -469,6 +480,7 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  outline: none;
 }
 
 .search__button:hover {
@@ -486,6 +498,10 @@ template {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.user__avatar:hover {
+  filter: brightness(75%);
 }
 
 .user__name {
@@ -553,10 +569,42 @@ template {
   margin: 0;
 }
 
+.hotel__backbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.hotel__link {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.hotel__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  width: 100px;
+  min-height: 50px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hotel__button:active {
+  outline: none;
+}
+
+.hotel__button:hover {
+  background-color: #df133a;
 }
 
 .hotel-wrapper {
@@ -652,6 +700,7 @@ template {
   color: #ffff;
   background-color: #EC1F46;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .rating__text {
@@ -767,10 +816,15 @@ template {
   border: none;
   color: #ffff;
   cursor: pointer;
+  outline: none;
 }
 
 .booking__button:hover {
   background-color: #df133a;
+}
+
+.booking__button:active {
+  outline: none;
 }
 
 .map {
@@ -846,6 +900,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  outline: none;
 }
 
 .subscribe__button {
@@ -858,6 +913,7 @@ template {
   background-color: #EC1F46;
   color: #ffff;
   cursor: pointer;
+  outline: none;
 }
 
 .subscribe__button:hover {
@@ -925,6 +981,11 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
+}
+
+.reviews-slider__button:hover {
+  filter: brightness(75%);
 }
 
 .reviews-slider__button--next {
@@ -1068,6 +1129,7 @@ template {
   color: #ffff;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
 }
 
 .card__button:hover {
@@ -1186,6 +1248,11 @@ template {
 
 .footer__link:hover {
   text-decoration: underline;
+  filter: brightness(75%);
+}
+
+.footer__link-img:hover {
+  filter: brightness(75%);
 }
 
 .footer__input {
@@ -1214,6 +1281,10 @@ template {
 .footer__button {
   outline: none;
   cursor: pointer;
+}
+
+.footer__button:hover {
+  background-color: #df133a;
 }
 
 .footer__info {
@@ -1260,6 +1331,7 @@ template {
 
 .footer-bottom__link:hover {
   text-decoration: underline;
+  filter: brightness(50%);
 }
 
 .modal__overlay {
@@ -1278,6 +1350,10 @@ template {
 .modal__overlay--visible {
   visibility: visible;
   opacity: 1;
+}
+
+.modal__button:hover {
+  filter: brightness(75%);
 }
 
 .modal__dialog {
@@ -1506,6 +1582,9 @@ template {
   .navbar-menu__item--mobile--visible {
     display: block;
   }
+  .search__input {
+    max-width: 243px;
+  }
   .menu-button {
     display: flex;
     align-items: center;
@@ -1517,6 +1596,7 @@ template {
     border: none;
     background-color: #ffff;
     cursor: pointer;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;

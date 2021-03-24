@@ -75,6 +75,10 @@
         color: inherit
         &:hover
             text-decoration: underline
+            filter: brightness(75%)
+        &-img
+            &:hover
+                filter: brightness(75%)
     &__input
         
         margin-bottom: 15px
@@ -99,6 +103,8 @@
     &__button
         outline: none        
         cursor: pointer 
+        &:hover
+            background-color: $primary-hover
     &__info
         font-style: normal
         font-weight: bold
@@ -132,4 +138,5 @@
             color: inherit
             &:hover
                 text-decoration: underline
+                filter: brightness(50%)
         &__image
