@@ -1385,6 +1385,13 @@ template {
   cursor: pointer;
 }
 
+.modal__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
@@ -1533,6 +1540,12 @@ template {
   }
   .footer-bottom__item {
     margin-right: 9px;
+  }
+  .modal__button {
+    min-width: 50%;
+  }
+  .modal__dialog {
+    padding: 33px 70px;
   }
 }
 
@@ -1684,6 +1697,19 @@ template {
   .footer-bottom__list {
     margin-right: auto;
   }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__dialog {
+    padding: 33px 40px;
+  }
+  .modal__button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .modal__input, .modal__message {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1791,6 +1817,12 @@ template {
   }
   .footer-bottom__image {
     margin: 0;
+  }
+  .modal__dialog {
+    max-width: 70%;
+  }
+  .modal__input {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

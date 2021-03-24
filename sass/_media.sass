@@ -94,6 +94,11 @@
             margin-top: 80px
             &__item
                 margin-right: 9px
+    .modal
+        &__button
+            min-width: 50%
+        &__dialog
+            padding: 33px 70px
 @media screen and ( max-width: 768px )
     .container
         max-width: 576px
@@ -225,6 +230,17 @@
         &-bottom
             &__list
                 margin-right: auto
+    .modal
+        &__title
+            font-size: 16px
+        
+        &__dialog
+            padding: 33px 40px
+        &__button
+            margin-bottom: 10px
+            width: 100%
+        &__input, &__message
+            font-size: 12px
 @media screen and ( max-width: 576px )
     .logo
         width: 99px
@@ -307,3 +323,8 @@
                 margin-bottom: 10px
             &__image
                 margin: 0
+    .modal
+        &__dialog
+            max-width: 70%
+        &__input
+            font-size: 10px
