@@ -1819,10 +1819,41 @@ template {
     margin: 0;
   }
   .modal__dialog {
-    max-width: 70%;
+    min-width: 96%;
+    padding: 15px 31px;
+  }
+  .modal__title {
+    font-size: 14px;
+    margin-bottom: 15px;
   }
   .modal__input {
     font-size: 10px;
+    height: 33px;
+    margin-bottom: 9px;
+  }
+  .modal__message {
+    height: 45px;
+    font-size: 11px;
+    margin-bottom: 9px;
+  }
+  .modal__info {
+    font-size: 11px;
+  }
+  .modal__img {
+    width: 11px;
+    height: 11px;
+  }
+  .modal__close {
+    right: 15px;
+    top: 12px;
+  }
+  .modal__button {
+    padding: 9px;
+    min-height: 41px;
+    font-size: 12px;
+  }
+  .message {
+    padding: 11px 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
