@@ -96,11 +96,48 @@
             margin-top: 80px
             &__item
                 margin-right: 9px
+        
     .modal
         &__button
             min-width: 50%
+            min-height: 23px
+            padding: 15px
+            margin-top: 10px
+        &__message
+            height: 100px
         &__dialog
-            padding: 33px 70px
+            padding: 34px 55px
+        &__input
+            height: 40px
+            margin-top: 12px
+        &__img
+            width: 13px
+            height: 13px
+      
+@media screen and ( max-height: 450px )
+    .modal
+        &__button
+            min-width: 50%
+            min-height: 20px
+            padding: 12px
+            margin-top: 10px
+        &__title
+            font-size: 17px
+        &__message
+            height: 60px
+            font-size: 12px
+            margin-top: 11px
+        &__dialog
+            padding: 30px 50px
+        &__input
+            height: 30px
+            margin-top: 10px
+            font-size: 11px
+        &__img
+            width: 13px
+            height: 13px
+    .message
+        padding: 15px 23px
 @media screen and ( max-width: 768px )
     .container
         max-width: 576px
@@ -208,6 +245,9 @@
             width: 92%
             flex-direction: column
             align-items: flex-start
+        &-title
+            &__strong
+                margin-bottom: 15px
     .reviews
         &-slider
             &__item
@@ -244,6 +284,73 @@
             width: 100%
         &__input, &__message
             font-size: 12px
+@media screen and ( max-height: 550px )
+    .navbar
+        &__menu
+        &-menu
+            padding-top: 0
+            &__item
+                margin-bottom: 11px  
+            &__link
+                font-size: 11px
+        &__search
+            height: 35px
+        &-bottom
+            padding-top: 15px
+@media screen and ( max-height: 440px )
+    .navbar
+        &__menu
+        &-menu
+            padding-top: 0
+            &__item
+                margin-bottom: 5px  
+        &__search
+            height: 22px
+        &-bottom
+            padding-top: 15px
+    .search
+        &__input
+            max-width: 152px
+            font-size: 10px
+            padding-left: 20px
+            padding-right: 50px
+        &__button
+            width: 50px
+        &__img
+            width: 12px
+            height: 12px
+    .user
+        &__name
+            margin-top: 3px
+            font-size: 13px
+            line-height: 14px
+@media screen and ( max-height: 350px )
+    .navbar
+        &__menu
+        &-menu
+            padding-top: 0
+            &__item
+                margin-bottom: 3px  
+        &__search
+            height: 22px
+        &-bottom
+            padding-top: 15px
+    .search
+        &__input
+            max-width: 121px;
+            font-size: 9px;
+            padding-left: 20px;
+            padding-right: 30px
+        &__button
+            width: 30px
+        &__img
+            width: 12px
+            height: 12px
+    .user
+        &__name
+            margin-top: 3px
+            font-size: 13px
+            line-height: 14px
 @media screen and ( max-width: 576px )
     .logo
         width: 99px

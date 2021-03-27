@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" as="font" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -26,7 +26,7 @@
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
                     <input type="text" class="search__input" placeholder="Search Location" />
                     <button class="search__button">
-              <img src="img/search.svg" alt="Icon: Search" />
+              <img  src="img/search.svg" alt="Icon: Search" />
             </button>
                 </form>
 
@@ -46,44 +46,46 @@
         <!-- /.container -->
         <div class="navbar-bottom">
             <div class="container">
-                <ul class="navbar-menu">
-                    <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-                        <a href="#" class="user navbar__user navbar__user--mobile--visible">
-                            <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
-                            <span class="user__name user__name--light">Nathan</span>
-                        </a>
-                    </li>
-                    <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-                        <form action="#" class="search navbar__search navbar__search--mobile--visible">
-                            <input type="text" class="search__input" placeholder="Search Location" />
-                            <button class="search__button">
-                  <img src="img/search.svg" alt="Icon: Search" />
-                </button>
-                        </form>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">All Deals</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Hotels</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Activities</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Restaurants</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Events</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Rodrigues</a>
-                    </li>
-                </ul>
-                <!-- /.navbar-menu -->
+                <div class="navbar__menu">
+                    <ul class="navbar-menu">
+                        <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                                <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
+                                <span class="user__name user__name--light">Nathan</span>
+                            </a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                                <input type="text" class="search__input" placeholder="Search Location" />
+                                <button class="search__button">
+                      <img class="search__img" src="img/search.svg" alt="Icon: Search" />
+                    </button>
+                            </form>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">All Deals</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Hotels</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Activities</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Restaurants</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Events</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Rodrigues</a>
+                        </li>
+                    </ul>
+                    <!-- /.navbar-menu -->
+                </div>
             </div>
         </div>
         <!-- /.navbar-bottom -->
@@ -221,7 +223,7 @@
         <!-- /.booking -->
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37344312.825382374!2d-4.735003399999995!3d40.617264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed2deceae4721%3A0x408f7a1ace95c13!2sDoubleTree%20by%20Hilton%20Hotel%20%26%20Conference%20Centre%20Warsaw!5e1!3m2!1sru!2slv!4v1616070682027!5m2!1sru!2slv"
-                width="100%" height="213" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                width="576" height="213" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </div>
         </div>
         <!-- /.hotel-right -->
@@ -419,7 +421,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/vertical-logo.svg" alt="logo: best tour plan" class="logo footer__logo" />
+               <a class="logo footer__logo" href="index.html"><img src="img/vertical-logo.svg" alt="logo: best tour plan" class="logo footer__logo" /></a>
+                
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -522,13 +525,13 @@
                         <div class="footer__icon-wrapper">
                             <img class="footer__icon" src="img/phone-call.svg" alt="icon: phone" />
                         </div>
-                        Tel (business hours) : 269 1500 <br /> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br /> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                        <div class="footer__contacts">Tel (business hours) : <a class="footer__contact" href="tel:+2691500">269 1500</a> <br /> Tel (hotline) Monday - Saturday: <a class="footer__contact" href="tel:+52566138">52-56-61-38</a>  (08:00 am – 20:00 pm) <br /> Tel (hotline) Sunday: <a class="footer__contact" href="tel:+52566138">52-56-61-38</a> (08:00 am – 14:00 pm)</div>
                     </li>
                     <li class="footer__item footer__item--mb-2">
                         <div class="footer__icon-wrapper">
                             <img class="footer__icon" src="img/email.svg" alt="icon: email" />
                         </div>
-                        cherly.lawson@example.com
+                        <div class="footer__contacts"><a class="footer__contact" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></div>
                     </li>
                 </ul>
             </div>
@@ -540,7 +543,7 @@
                         <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2" />
                     </div>
                     <div class="footer__input-group">
-                        <input type="tel" class="input footer__input phone" data-mask="+7 (000) 000 00 00" placeholder="Phone Number*" name="phone" required />
+                        <input type="tel" class="input footer__input phone" data-mask="+7 (000) 000 00 00" placeholder="Phone Number*" name="phone" required minlength="18" maxlength="18" />
                     </div>
 
                     <textarea class="message footer__message" rows="6" placeholder="Message" name="message"></textarea>
